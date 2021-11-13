@@ -20,3 +20,8 @@ jobs:
           sudo ln -sf /usr/bin/python3.8 /usr/bin/python
       - name: build fw
         run: ./PF-build.sh -v Caribou320-MK3S-BMH.h  -l EN_ONLY -d GOLD
+      - name: Upload math result for job 1
+        uses: actions/upload-artifact@v2
+        with:
+          name: CompiledFW
+          path: ../PF-build-hex/
