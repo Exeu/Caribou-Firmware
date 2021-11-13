@@ -24,4 +24,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: CompiledFW
-          path: ../PF-build-hex/
+          path: /home/runner/work/PF-build-hex/
