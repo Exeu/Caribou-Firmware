@@ -18,6 +18,5 @@ jobs:
         apt-get update
         apt-get -y install zip python3 wget gawk
         ln -sf /usr/bin/python3.8 /usr/bin/python
-    
     - name: build
       run: ./build.sh
