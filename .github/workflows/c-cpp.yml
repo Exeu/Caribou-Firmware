@@ -24,8 +24,8 @@ jobs:
         run: ls -lha /home/runner/work/Caribou-Firmware
       - name: ShowF2
         run: ls -lha /home/runner
-      - name: Upload math result for job 1
+      - name: Upload hexfiles
         uses: actions/upload-artifact@v2
         with:
           name: CompiledFW
-          path: /home/runner/work/PF-build-hex/
+          path: /home/runner/work/Caribou-Firmware/PF-build-hex/
