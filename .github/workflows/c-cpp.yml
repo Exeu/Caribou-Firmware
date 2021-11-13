@@ -18,12 +18,10 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y wget zip gawk python3
           sudo ln -sf /usr/bin/python3.8 /usr/bin/python
-      - name: build fw
-        run: ./PF-build.sh -v Caribou320-MK3S-BMH.h  -l EN_ONLY -d GOLD
-      - name: ShowF
-        run: ls -lha /home/runner/work/Caribou-Firmware
-      - name: ShowF2
-        run: ls -lha /home/runner
+      - name: build variant BMH
+        run: ./PF-build.sh -v Caribou320-MK3S-BMH.h -l EN_ONLY -d GOLD
+      - name: build variant BEH
+        run: ./PF-build.sh -v Caribou320-MK3S-BEH.h -l EN_ONLY -d GOLD
       - name: Upload hexfiles
         uses: actions/upload-artifact@v2
         with:
