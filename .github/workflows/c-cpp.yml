@@ -13,5 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    
+    - name: install deps
+    - run: |
+        apt-get update
+        apt-get -y install zip python3 wget gawk
+    
     - name: build
       run: ./build.sh
