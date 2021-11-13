@@ -16,5 +16,5 @@ jobs:
       - name: install deps
         run: |
           sudo apt-get update
-          sudo apt-get install -y wget zip gwak python3
+          sudo apt-get install -y wget zip gawk python3
           sudo ln -sf /usr/bin/python3.8 /usr/bin/python
