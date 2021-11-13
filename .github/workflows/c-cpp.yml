@@ -18,3 +18,5 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y wget zip gawk python3
           sudo ln -sf /usr/bin/python3.8 /usr/bin/python
+      - name: build fw
+        run: PF-build.sh -v Caribou320-MK3S-BMH.h  -l EN_ONLY -d GOLD
